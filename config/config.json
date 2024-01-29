@@ -1,0 +1,12 @@
+{
+    "token": "YOUR_TOKEN",
+    "roleId": "ROLE_ID",
+    "serverId": "SERVER_ID",
+    "triggerMessages": [
+      "/update",
+      ".gg/update",
+      "discord.gg/update",
+      "https://discord.gg/update"
+    ],
+    "webhookUrl": "WEBHOOK_URL"
+  }
