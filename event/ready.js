@@ -9,17 +9,18 @@ const { MessageEmbed } = require('discord.js');
 function setBotStatus(client) {
   client.user.setPresence({
     status: 'dnd',
-    activities: [{ name: '...', type: 'PLAYING' }],
+    activities: [{ name: 'github.com/Kurama250', type: 'PLAYING' }],
   });
 }
 
 function handleReadyEvent(client) {
-console.log(`-----------------------------------------`);
-console.log(`   Bot create by github.com/Kurama250    `);
-console.log(`                 V1.0                    `);
-console.log(`-----------------------------------------`);
-  console.log(`Bot connected to ${client.user.tag}`);
-  setBotStatus(client);
+console.log('---------------------------------------------------------');
+console.log('                      Status_bot                         ');
+console.log('            Create by github.com/Kurama250               ');
+console.log('Licence : Creative commons - CC BY-NC-ND 4.0 by Kurama250');
+console.log('---------------------------------------------------------');
+console.log(`Bot connected to ${client.user.tag}`);
+setBotStatus(client);
 
   const guilds = client.guilds.cache;
   const serverCount = guilds.size;
