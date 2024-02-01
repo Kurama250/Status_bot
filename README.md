@@ -62,7 +62,7 @@ nano config/config.json
 ## 3 - on Terminal
 
 ```shell script
-pm2 start index.js -n Status_bot
+pm2 start main.js -n Status_bot
 ```
 - Demo : 
 
