@@ -73,7 +73,6 @@ pm2 start main.js -n Status_bot
 - Demo : 
 
 ![alt text](https://github.com/Kurama250/Status_bot/blob/main/status.png?raw=true)
-
 <h3 align="center">If you like this repository don't hesitate to give it a star ⭐ !</h3>
 <h1 align="center">Then it's the end you have started the code have fun !</h1>
 
