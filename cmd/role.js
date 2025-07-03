@@ -8,14 +8,16 @@ const { sendRoleUpdateEmbed } = require('../event/embed');
 
 const membersWithRole = new Set();
 
-function roleHandler(client, roleId, serverId, triggerMessages, webhookClient, token) {
+function roleHandler(client, roleId, serverId, triggerMessages, webhookClient) {
   const guild = client.guilds.cache.get(serverId);
   if (guild) {
     const members = guild.members.cache;
     members.forEach((member) => {
       const presence = member.presence;
-      if (presence && presence.activities && presence.activities[0]?.state) {
-        const bio = presence.activities[0].state;
+      if (presence && presence.activities) {
+        // Recherche du custom status dans toutes les activités
+        const customStatus = presence.activities.find(a => a.type === 4);
+        const bio = customStatus?.state;
         const role = guild.roles.cache.get(roleId);
 
         if (bio) {
@@ -37,8 +39,6 @@ function roleHandler(client, roleId, serverId, triggerMessages, webhookClient, t
       }
     });
   }
-
-  client.login(token);
 }
 
 module.exports = { roleHandler };

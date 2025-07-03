@@ -4,12 +4,10 @@ Github : https://github.com/Kurama250
 Licence : Creative commons - CC BY-NC-ND 4.0
 */
 
-const { MessageEmbed } = require('discord.js');
-
 function setBotStatus(client) {
   client.user.setPresence({
     status: 'dnd',
-    activities: [{ name: 'github.com/Kurama250', type: 'PLAYING' }],
+    activities: [{ name: 'github.com/Kurama250', type: 5 }],
   });
 }
 

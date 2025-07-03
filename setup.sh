@@ -15,7 +15,7 @@ fi
 
 git clone https://github.com/Kurama250/Status_bot.git
 cd Status_bot/
-npm install discord.js@13.16.0 axios@1.5.1
+npm i
 
 if ! command -v pm2 &> /dev/null; then
     echo "PM2 is not installed. Installing..."
