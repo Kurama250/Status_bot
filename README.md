@@ -10,8 +10,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/npm/v/module-name">
-  <img src="https://img.shields.io/npm/v/axios@1.5.1?label=axios@1.5.1">
-  <img src="https://img.shields.io/npm/v/discord.js@13.16.0?label=discord.js@13.16.0">
+  <img src="https://img.shields.io/npm/v/axios?label=axios">
+  <img src="https://img.shields.io/npm/v/discord.js?label=discord.js">
 </p>
 
 # Tutorial to install the bot ! For LINUX (VPS or Dedicated Server)
@@ -37,7 +37,7 @@ apt-get install -y nodejs
 ```shell script
 git clone https://github.com/Kurama250/Status_bot.git
 cd Status_bot/
-npm install discord.js@13.16.0 axios@1.5.1
+npm i
 npm install pm2 -g
 ```
 ## 2 - on Terminal
